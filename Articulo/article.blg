@@ -1,0 +1,12 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: article.aux
+The style file: jss.bst
+Database file #1: refs.bib
+A bad cross reference---entry "Williams1996"
+refers to entry "conf/nips/1996N", which doesn't exist
+Warning--I didn't find a database entry for "conf/nips/1996N"
+Warning--empty booktitle in Bhat2006
+Warning--missing publisher in degroot19886
+Warning--missing publisher in Miggon
+Warning--empty booktitle in Arya2017
+Warning--empty journal in Stan
+(There was 1 error message)

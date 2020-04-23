@@ -1,0 +1,152 @@
+\begin{thebibliography}{19}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Betancourt(2017)}]{betancourt2017}
+Betancourt M (2017).
+\newblock \enquote{A Conceptual Introduction to Hamiltonian Monte Carlo.}
+\newblock \eprint{1701.02434}.
+
+\bibitem[{Bhat and Prosper(2006)}]{Bhat2006}
+Bhat PC, Prosper HB (2006).
+\newblock \enquote{Bayesian Neuroanl Networks.}
+\newblock \doi{10.1142/9781860948985_0032}.
+\newblock
+  \urlprefix\url{https://www.semanticscholar.org/paper/BAYESIAN-NEURAL-NETWORKS-Bhat-Prosper}.
+
+\bibitem[{Cheng \emph{et~al.}(2018)Cheng, Khomtchouk, Matloff, and
+  Mohanty}]{Cheng2018}
+Cheng X, Khomtchouk B, Matloff NS, Mohanty P (2018).
+\newblock \enquote{Polynomial Regression As an Alternative to Neural Nets.}
+\newblock \emph{CoRR}, \textbf{abs/1806.06850}.
+\newblock \eprint{1806.06850}, \urlprefix\url{http://arxiv.org/abs/1806.06850}.
+
+\bibitem[{DeGroot(1986)}]{degroot19886}
+DeGroot MH (1986).
+\newblock \emph{Probability and Statistics}.
+
+\bibitem[{Duane(1987)}]{DUANE1987216}
+Duane S ea (1987).
+\newblock \enquote{Hybrid Monte Carlo.}
+\newblock \emph{Physics Letters B}, \textbf{95}(2), 216 -- 222.
+\newblock ISSN 0370-2693.
+\newblock \doi{https://doi.org/10.1016/0370-2693(87)91197-X"}.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/037026938791197X}.
+
+\bibitem[{Gramacy(2020)}]{gramacy2020surrogates}
+Gramacy RB (2020).
+\newblock \emph{Surrogates: {G}aussian Process Modeling, Design and \
+  Optimization for the Applied Sciences}.
+\newblock Chapman Hall/CRC, Boca Raton, Florida.
+\newblock \url{http://bobby.gramacy.com/surrogates/}.
+
+\bibitem[{Hoffman and Gelman(2014)}]{hoffman14a}
+Hoffman MD, Gelman A (2014).
+\newblock \enquote{The No-U-Turn Sampler: Adaptively Setting Path Lengths in
+  Hamiltonian Monte Carlo.}
+\newblock \emph{Journal of Machine Learning Research}, \textbf{15}, 1593--1623.
+\newblock \urlprefix\url{http://jmlr.org/papers/v15/hoffman14a.html}.
+
+\bibitem[{Kass and Raftery(1995)}]{bayesfactor}
+Kass RE, Raftery AE (1995).
+\newblock \enquote{Bayes Factors.}
+\newblock \emph{Journal of the American Statistical Association},
+  \textbf{90}(430), 773--795.
+\newblock ISSN 01621459.
+\newblock \urlprefix\url{http://www.jstor.org/stable/2291091}.
+
+\bibitem[{Lewandowski \emph{et~al.}(2009)Lewandowski, Kurowicka, and
+  Joe}]{LKJ2009}
+Lewandowski D, Kurowicka D, Joe H (2009).
+\newblock \enquote{Generating random correlation matrices based on vines and
+  extended onion method.}
+\newblock \emph{Journal of Multivariate Analysis}, \textbf{100}(9), 1989 --
+  2001.
+\newblock ISSN 0047-259X.
+\newblock \doi{https://doi.org/10.1016/j.jmva.2009.04.008}.
+\newblock
+  \urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0047259X09000876}.
+
+\bibitem[{Migon \emph{et~al.}(2014)Migon, Gamerman, and Louzada}]{Miggon}
+Migon H, Gamerman D, Louzada F (2014).
+\newblock \emph{Statistical inference. An integrated approach}.
+\newblock Chapman and Hall CRC Texts in Statistical Science.
+\newblock ISBN 9781439878804.
+
+\bibitem[{Paige and Butler(2001)}]{Paige2001}
+Paige RL, Butler RW (2001).
+\newblock \enquote{Bayesian Inference in Neural Networks.}
+\newblock \emph{Biometrika}, \textbf{88}(3), 623--641.
+\newblock ISSN 00063444.
+\newblock \urlprefix\url{http://www.jstor.org/stable/2673435}.
+
+\bibitem[{Pourzanjani \emph{et~al.}(2017)Pourzanjani, Jiang, and
+  Petzold}]{Arya2017}
+Pourzanjani AA, Jiang RM, Petzold LR (2017).
+\newblock \enquote{Improving the Identifiability of Neural Networks for
+  Bayesian Inference.}
+\newblock \doi{46932278}.
+\newblock
+  \urlprefix\url{https://www.semanticscholar.org/paper/Improving-the-Identifiability-of-Neural-Networks-Pourzanjani-Jiang}.
+
+\bibitem[{Rigby and Stasinopoulos(2005)}]{Rigby2005}
+Rigby RA, Stasinopoulos DM (2005).
+\newblock \enquote{Generalized additive models for location, scale and shape.}
+\newblock \emph{Journal of the Royal Statistical Society: Series C (Applied
+  Statistics)}, \textbf{54}(3), 507--554.
+\newblock \doi{10.1111/j.1467-9876.2005.00510.x}.
+\newblock
+  \eprint{https://rss.onlinelibrary.wiley.com/doi/pdf/10.1111/j.1467-9876.2005.00510.x},
+  \urlprefix\url{https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9876.2005.00510.x}.
+
+\bibitem[{Silverman(1985)}]{Silverman1985}
+Silverman BW (1985).
+\newblock \enquote{Some Aspects of the Spline Smoothing Approach to
+  Non-Parametric Regression Curve Fitting.}
+\newblock \emph{Journal of the Royal Statistical Society. Series B
+  (Methodological)}, \textbf{47}(1), 1--52.
+\newblock ISSN 00359246.
+\newblock \urlprefix\url{http://www.jstor.org/stable/2345542}.
+
+\bibitem[{Stan(2017a)}]{Stan}
+Stan DT (2017a).
+\newblock \enquote{Stan: A C++ Library for Probability and Sampling, Version
+  2.16.0.}
+\newblock \urlprefix\url{http://mc-stan.org/.}
+
+\bibitem[{Vehtari \emph{et~al.}(2015)Vehtari, Simpson, Gelman, Yao, and
+  Gabry}]{vehtari}
+Vehtari A, Simpson D, Gelman A, Yao Y, Gabry J (2015).
+\newblock \enquote{Pareto Smoothed Importance Sampling.}
+\newblock \eprint{1507.02646}.
+
+\bibitem[{Vehtari and Gabry(2017)}]{loo}
+Vehtari A~Gelman A, Gabry J (2017).
+\newblock \enquote{loo: Efficient Leave-One-Out Cross-Validation and WAIC for
+  Bayesian Models. R Package.}
+\newblock \urlprefix\url{https://github.com/jgabry/loo.}
+
+\bibitem[{Watanabe(2010)}]{watanabe}
+Watanabe S (2010).
+\newblock \enquote{Asymptotic Equivalence of Bayes Cross Validation and Widely
+  Applicable Information Criterion in Singular Learning Theory.}
+\newblock \emph{Journal of Machine Learning Research}, \textbf{11}.
+\newblock
+  \urlprefix\url{http://www.jmlr.org/papers/volume11/watanabe10a/watanabe10a.pdf}.
+
+\bibitem[{Williams(1996)}]{Williams1996}
+Williams CKI (1996).
+\newblock \enquote{Computing with Infinite Networks.}
+\newblock In \emph{NIPS}, pp. 295--301.
+\newblock
+  \urlprefix\url{http://papers.nips.cc/paper/1197-computing-with-infinite-networks}.
+
+\end{thebibliography}
