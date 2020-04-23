@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.19)  23 APR 2020 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.19)  23 APR 2020 21:40
 entering extended mode
 **./article.tex
 (article.tex
@@ -738,8 +738,8 @@ Xy-pic pdf driver: `rotate' extension support
 \c@Obs=\count138
 
 (article.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 )
 \openout1 = `article.aux'.
 
@@ -852,30 +852,52 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Info: Redefining \. on input line 71.
 LaTeX Info: Redefining \% on input line 71.
 Package xypdf Info: Line width: 0.39998pt on input line 71.
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Package xcolor Warning: Incompatible color definition on input line 84.
+
+
+Package xcolor Warning: Incompatible color definition on input line 84.
+
+
+Underfull \vbox (badness 1484) has occurred while \output is active []
+
  [1
 
-{C:/Users/asael/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+{C:/Users/asael/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] <xymatrix 4
+x6 1016>
 
-Package xcolor Warning: Incompatible color definition on input line 81.
-
-
-Package xcolor Warning: Incompatible color definition on input line 81.
-
-<xymatrix 4x6 1016>
-
-Package xcolor Warning: Incompatible color definition on input line 99.
+Package xcolor Warning: Incompatible color definition on input line 102.
 
 
-Package xcolor Warning: Incompatible color definition on input line 99.
+Package xcolor Warning: Incompatible color definition on input line 102.
 
 
-Package xcolor Warning: Incompatible color definition on input line 99.
+Package xcolor Warning: Incompatible color definition on input line 102.
 
 
-Package xcolor Warning: Incompatible color definition on input line 99.
+Package xcolor Warning: Incompatible color definition on input line 102.
 
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
+
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+
+Underfull \vbox (badness 3942) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 2 []
@@ -886,18 +908,10 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.106 	S
-        ea $Y = \{Y_1,Y_2,\ldots,Y_n\}$ un conjunto en $\mathbb{R}$ que repr...
-] <xymatrix 2x6 220>
-
-Package xcolor Warning: Incompatible color definition on input line 137.
-
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 137.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 137.
-LaTeX Info: Redefining \. on input line 138.
-LaTeX Info: Redefining \% on input line 138.
+l.107 
+      ] <xymatrix 2x6 220>
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 3
@@ -908,36 +922,43 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.138 
-      ]
+l.137 \end{Def}
+               ]
 
-Package xcolor Warning: Incompatible color definition on input line 160.
+Package xcolor Warning: Incompatible color definition on input line 140.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 140.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 140.
+
+Package xcolor Warning: Incompatible color definition on input line 163.
 
 
-Package xcolor Warning: Incompatible color definition on input line 160.
+Package xcolor Warning: Incompatible color definition on input line 163.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 163--164
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 162.
+Package xcolor Warning: Incompatible color definition on input line 165.
 
 
-Package xcolor Warning: Incompatible color definition on input line 162.
+Package xcolor Warning: Incompatible color definition on input line 165.
 
 
-Package xcolor Warning: Incompatible color definition on input line 162.
+Package xcolor Warning: Incompatible color definition on input line 165.
 
 
-Package xcolor Warning: Incompatible color definition on input line 162.
+Package xcolor Warning: Incompatible color definition on input line 165.
 
 
-Package xcolor Warning: Incompatible color definition on input line 162.
+Package xcolor Warning: Incompatible color definition on input line 165.
 
 
-Package xcolor Warning: Incompatible color definition on input line 162.
+Package xcolor Warning: Incompatible color definition on input line 165.
 
 LaTeX Info: Redefining \. on input line 166.
 LaTeX Info: Redefining \% on input line 166.
@@ -948,30 +969,30 @@ Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 
 [4]
 
-Package xcolor Warning: Incompatible color definition on input line 167.
+Package xcolor Warning: Incompatible color definition on input line 170.
 
 
-Package xcolor Warning: Incompatible color definition on input line 167.
+Package xcolor Warning: Incompatible color definition on input line 170.
 
 
-Package xcolor Warning: Incompatible color definition on input line 167.
+Package xcolor Warning: Incompatible color definition on input line 170.
 
 
-Package xcolor Warning: Incompatible color definition on input line 167.
+Package xcolor Warning: Incompatible color definition on input line 170.
 
 
-Package xcolor Warning: Incompatible color definition on input line 167.
+Package xcolor Warning: Incompatible color definition on input line 170.
 
 
-Package xcolor Warning: Incompatible color definition on input line 167.
+Package xcolor Warning: Incompatible color definition on input line 170.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
 
 
-Overfull \hbox (3.18347pt too wide) detected at line 177
+Overfull \hbox (3.18347pt too wide) detected at line 180
 \OML/lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 =Y\OT1/lmr/m/n/10
 .95 ) \OMS/lmsy/m/n/10.95 / \OML/lmm/m/it/10.95 exp [] P\OT1/lmr/m/n/10.95 (\OM
 L/lmm/m/it/10.95 []\OT1/lmr/m/n/10.95 ) [] \OML/lmm/m/it/10.95 P\OT1/lmr/m/n/1
@@ -983,73 +1004,74 @@ lmm/m/it/10.95 P\OT1/lmr/m/n/10.95 (\OML/lmm/m/it/10.95 []\OT1/lmr/m/n/10.95 )
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 182.
+Package xcolor Warning: Incompatible color definition on input line 185.
 
 
-Package xcolor Warning: Incompatible color definition on input line 182.
+Package xcolor Warning: Incompatible color definition on input line 185.
 
 
-Package xcolor Warning: Incompatible color definition on input line 182.
+Package xcolor Warning: Incompatible color definition on input line 185.
 
 
-Package xcolor Warning: Incompatible color definition on input line 182.
+Package xcolor Warning: Incompatible color definition on input line 185.
 
-LaTeX Info: Redefining \. on input line 187.
-LaTeX Info: Redefining \% on input line 187.
+LaTeX Info: Redefining \. on input line 190.
+LaTeX Info: Redefining \% on input line 190.
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 5
  []
 
 [5]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 208.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 211.
 
  ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<images/pairs1-1.png, id=129, 722.7pt x 578.16pt>
-File: images/pairs1-1.png Graphic file (type png)
-<use images/pairs1-1.png>
-Package pdftex.def Info: images/pairs1-1.png  used on input line 222.
-(pdftex.def)             Requested size: 722.69823pt x 578.15858pt.
-LaTeX Info: Redefining \. on input line 226.
-LaTeX Info: Redefining \% on input line 226.
+LaTeX Info: Redefining \. on input line 222.
+LaTeX Info: Redefining \% on input line 222.
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 6 []
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+<images/pairs1-1.png, id=145, 722.7pt x 578.16pt>
+File: images/pairs1-1.png Graphic file (type png)
+<use images/pairs1-1.png>
+Package pdftex.def Info: images/pairs1-1.png  used on input line 225.
+(pdftex.def)             Requested size: 722.69823pt x 578.15858pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 230--231
 
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 235.
+Package xcolor Warning: Incompatible color definition on input line 238.
 
 
-Package xcolor Warning: Incompatible color definition on input line 235.
+Package xcolor Warning: Incompatible color definition on input line 238.
 
 
-Package xcolor Warning: Incompatible color definition on input line 235.
+Package xcolor Warning: Incompatible color definition on input line 238.
 
 
-Package xcolor Warning: Incompatible color definition on input line 235.
+Package xcolor Warning: Incompatible color definition on input line 238.
 
 
-Package xcolor Warning: Incompatible color definition on input line 235.
+Package xcolor Warning: Incompatible color definition on input line 238.
 
 
-Package xcolor Warning: Incompatible color definition on input line 235.
+Package xcolor Warning: Incompatible color definition on input line 238.
 
 
-Package xcolor Warning: Incompatible color definition on input line 235.
+Package xcolor Warning: Incompatible color definition on input line 238.
 
 
-Package xcolor Warning: Incompatible color definition on input line 235.
+Package xcolor Warning: Incompatible color definition on input line 238.
 
-LaTeX Info: Redefining \. on input line 236.
-LaTeX Info: Redefining \% on input line 236.
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 7
@@ -1060,15 +1082,15 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.236 
+l.239 
        <./images/pairs1-1.png>]
-<images/pairs2-1.png, id=155, 722.7pt x 578.16pt>
+<images/pairs2-1.png, id=161, 722.7pt x 578.16pt>
 File: images/pairs2-1.png Graphic file (type png)
 <use images/pairs2-1.png>
-Package pdftex.def Info: images/pairs2-1.png  used on input line 239.
+Package pdftex.def Info: images/pairs2-1.png  used on input line 242.
 (pdftex.def)             Requested size: 722.69823pt x 578.15858pt.
-LaTeX Info: Redefining \. on input line 260.
-LaTeX Info: Redefining \% on input line 260.
+LaTeX Info: Redefining \. on input line 262.
+LaTeX Info: Redefining \% on input line 262.
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 8 []
@@ -1079,24 +1101,24 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.260 ...-0.1766 -0.1123 -0.0475  5061.617  0.9992
+l.262 ... 26.255  36.955  47.264  4117.100  0.9993
                                                    <./images/pairs2-1.png (PNG 
 copy)>]
-<images/traceplot1.png, id=163, 722.7pt x 578.16pt>
+<images/traceplot1.png, id=172, 722.7pt x 578.16pt>
 File: images/traceplot1.png Graphic file (type png)
 <use images/traceplot1.png>
-Package pdftex.def Info: images/traceplot1.png  used on input line 281.
+Package pdftex.def Info: images/traceplot1.png  used on input line 284.
 (pdftex.def)             Requested size: 578.16078pt x 462.52863pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--287
+Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
 
 Underfull \vbox (badness 1043) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 287.
-LaTeX Info: Redefining \% on input line 287.
+LaTeX Info: Redefining \. on input line 290.
+LaTeX Info: Redefining \% on input line 290.
 
 Overfull \hbox (5.47499pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 9
@@ -1107,19 +1129,19 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.287 
+l.290 
        <./images/traceplot1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
-<images/pairs3-1.png, id=170, 722.7pt x 578.16pt>
+<images/pairs3-1.png, id=179, 722.7pt x 578.16pt>
 File: images/pairs3-1.png Graphic file (type png)
 <use images/pairs3-1.png>
-Package pdftex.def Info: images/pairs3-1.png  used on input line 292.
+Package pdftex.def Info: images/pairs3-1.png  used on input line 295.
 (pdftex.def)             Requested size: 722.69823pt x 578.15858pt.
-LaTeX Info: Redefining \. on input line 301.
-LaTeX Info: Redefining \% on input line 301.
+LaTeX Info: Redefining \. on input line 304.
+LaTeX Info: Redefining \% on input line 304.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 10 []
@@ -1130,22 +1152,22 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.301 ...m student(location = 0,df = 4,scale =1)$$
+l.304 ...m student(location = 0,df = 4,scale =1)$$
                                                    <./images/pairs3-1.png (PNG 
 copy)>]
 
-Package xcolor Warning: Incompatible color definition on input line 313.
+Package xcolor Warning: Incompatible color definition on input line 316.
 
 
-Package xcolor Warning: Incompatible color definition on input line 313.
+Package xcolor Warning: Incompatible color definition on input line 316.
 
-<images/traceplot2.png, id=180, 677.53125pt x 451.6875pt>
+<images/traceplot2.png, id=189, 677.53125pt x 451.6875pt>
 File: images/traceplot2.png Graphic file (type png)
 <use images/traceplot2.png>
-Package pdftex.def Info: images/traceplot2.png  used on input line 318.
+Package pdftex.def Info: images/traceplot2.png  used on input line 321.
 (pdftex.def)             Requested size: 542.02573pt x 361.35048pt.
-LaTeX Info: Redefining \. on input line 331.
-LaTeX Info: Redefining \% on input line 331.
+LaTeX Info: Redefining \. on input line 334.
+LaTeX Info: Redefining \% on input line 334.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 11
@@ -1156,10 +1178,10 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.331 ... -22.196 -14.553 -6.4797 2324.414  1.0005
+l.334 ... -22.196 -14.553 -6.4797 2324.414  1.0005
                                                    <./images/traceplot2.png>]
-LaTeX Info: Redefining \. on input line 370.
-LaTeX Info: Redefining \% on input line 370.
+LaTeX Info: Redefining \. on input line 373.
+LaTeX Info: Redefining \% on input line 373.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 12 []
@@ -1167,41 +1189,41 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 
 [12]
 
-Package xcolor Warning: Incompatible color definition on input line 374.
+Package xcolor Warning: Incompatible color definition on input line 377.
 
 
-Package xcolor Warning: Incompatible color definition on input line 374.
+Package xcolor Warning: Incompatible color definition on input line 377.
 
-<images/traceplot3.png, id=195, 677.53125pt x 526.96875pt>
+<images/traceplot3.png, id=204, 677.53125pt x 526.96875pt>
 File: images/traceplot3.png Graphic file (type png)
 <use images/traceplot3.png>
-Package pdftex.def Info: images/traceplot3.png  used on input line 387.
+Package pdftex.def Info: images/traceplot3.png  used on input line 390.
 (pdftex.def)             Requested size: 542.02573pt x 421.57556pt.
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 398.
 
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 398.
 
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 398.
 
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 398.
 
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 398.
 
 
-Package xcolor Warning: Incompatible color definition on input line 395.
+Package xcolor Warning: Incompatible color definition on input line 398.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
-LaTeX Info: Redefining \. on input line 396.
-LaTeX Info: Redefining \% on input line 396.
+LaTeX Info: Redefining \. on input line 399.
+LaTeX Info: Redefining \% on input line 399.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 13
@@ -1212,56 +1234,53 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.396 
+l.399 
        <./images/traceplot3.png>]
 
-Package xcolor Warning: Incompatible color definition on input line 417.
+Package xcolor Warning: Incompatible color definition on input line 420.
 
 
-Package xcolor Warning: Incompatible color definition on input line 417.
+Package xcolor Warning: Incompatible color definition on input line 420.
 
 (article.bbl
 
-Package xcolor Warning: Incompatible color definition on input line 15.
+Package xcolor Warning: Incompatible color definition on input line 27.
 
 
-Package xcolor Warning: Incompatible color definition on input line 20.
+Package xcolor Warning: Incompatible color definition on input line 32.
 
 
-Package xcolor Warning: Incompatible color definition on input line 22.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--23
+Package xcolor Warning: Incompatible color definition on input line 39.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 []\T1/lmr/m/n/10.95 Bhat PC, Pros-per HB (2006).  ``Ba-ye-sian Neu-ro-anl Net-w
 orks.''  [][]\T1/lmtt/m/n/10.95 doi:$10 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--23
+Underfull \hbox (badness 10000) in paragraph at lines 35--40
 \T1/lmtt/m/n/10.95 1142 / 9781860948985 _ 0032$[][]\T1/lmr/m/n/10.95 .  URL [][
 ]$\T1/lmtt/m/n/10.95 https : / / www . semanticscholar . org / paper /
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 29.
+Package xcolor Warning: Incompatible color definition on input line 46.
 
 
-Package xcolor Warning: Incompatible color definition on input line 29.
+Package xcolor Warning: Incompatible color definition on input line 46.
 
 
-Package xcolor Warning: Incompatible color definition on input line 40.
+Package xcolor Warning: Incompatible color definition on input line 57.
 
 
-Package xcolor Warning: Incompatible color definition on input line 42.
+Package xcolor Warning: Incompatible color definition on input line 59.
 
-
-Package xcolor Warning: Incompatible color definition on input line 49.
-
-
-Package xcolor Warning: Incompatible color definition on input line 56.
-
-LaTeX Info: Redefining \. on input line 57.
-LaTeX Info: Redefining \% on input line 57.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 14 []
@@ -1272,19 +1291,16 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.57 
+l.60 
      ]
 
-Package xcolor Warning: Incompatible color definition on input line 64.
+Package xcolor Warning: Incompatible color definition on input line 66.
 
 
-Package xcolor Warning: Incompatible color definition on input line 74.
+Package xcolor Warning: Incompatible color definition on input line 78.
 
 
-Package xcolor Warning: Incompatible color definition on input line 76.
-
-
-Package xcolor Warning: Incompatible color definition on input line 89.
+Package xcolor Warning: Incompatible color definition on input line 86.
 
 
 Package xcolor Warning: Incompatible color definition on input line 96.
@@ -1293,28 +1309,37 @@ Package xcolor Warning: Incompatible color definition on input line 96.
 Package xcolor Warning: Incompatible color definition on input line 98.
 
 
-Package xcolor Warning: Incompatible color definition on input line 105.
+Package xcolor Warning: Incompatible color definition on input line 111.
 
 
-Package xcolor Warning: Incompatible color definition on input line 107.
+Package xcolor Warning: Incompatible color definition on input line 118.
 
 
-Package xcolor Warning: Incompatible color definition on input line 108.
+Package xcolor Warning: Incompatible color definition on input line 120.
 
 
-Underfull \hbox (badness 2277) in paragraph at lines 101--109
+Package xcolor Warning: Incompatible color definition on input line 127.
+
+
+Package xcolor Warning: Incompatible color definition on input line 129.
+
+
+Package xcolor Warning: Incompatible color definition on input line 130.
+
+
+Underfull \hbox (badness 2277) in paragraph at lines 123--131
 []\T1/lmr/m/n/10.95 Rigby RA, Sta-si-no-pou-los DM (2005).  ``Ge-ne-ra-li-zed a
 d-di-ti-ve mo-dels for lo-ca-tion,
  []
 
 
-Underfull \hbox (badness 2744) in paragraph at lines 101--109
+Underfull \hbox (badness 2744) in paragraph at lines 123--131
 \T1/lmr/m/n/10.95 sca-le and sha-pe.''  \T1/lmr/m/it/10.95 Jour-nal of the Ro-y
 al Sta-tis-ti-cal So-ciety: Se-ries C (Ap-plied
  []
 
 
-Underfull \hbox (badness 3557) in paragraph at lines 101--109
+Underfull \hbox (badness 3557) in paragraph at lines 123--131
 \T1/lmr/m/it/10.95 Sta-tis-tics)\T1/lmr/m/n/10.95 , \T1/lmr/bx/n/10.95 54\T1/lm
 r/m/n/10.95 (3), 507--554.  [][]\T1/lmtt/m/n/10.95 doi:$10 . 1111 / j . 1467-[]
 9876 . 2005 . 00510 . x$[][]\T1/lmr/m/n/10.95 .  [][]$\T1/lmtt/m/n/10.95 https 
@@ -1322,81 +1347,81 @@ r/m/n/10.95 (3), 507--554.  [][]\T1/lmtt/m/n/10.95 doi:$10 . 1111 / j . 1467-[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--109
+Underfull \hbox (badness 10000) in paragraph at lines 123--131
 \T1/lmtt/m/n/10.95 / / rss . onlinelibrary . wiley . com / doi / pdf / 10 . 111
 1 / j . 1467-[]9876 . 2005 . 00510 . x$[][]\T1/lmr/m/n/10.95 ,
  []
 
 
-Underfull \hbox (badness 7740) in paragraph at lines 101--109
+Underfull \hbox (badness 7740) in paragraph at lines 123--131
 \T1/lmr/m/n/10.95 URL [][]$\T1/lmtt/m/n/10.95 https : / / rss . onlinelibrary .
  wiley . com / doi / abs / 10 . 1111 / j . 1467-[]9876 . 2005 .
  []
 
 
-Package xcolor Warning: Incompatible color definition on input line 117.
+Package xcolor Warning: Incompatible color definition on input line 139.
 
 
-Package xcolor Warning: Incompatible color definition on input line 123.
+Package xcolor Warning: Incompatible color definition on input line 145.
 
 
-Package xcolor Warning: Incompatible color definition on input line 129.
+Package xcolor Warning: Incompatible color definition on input line 151.
 
 
-Package xcolor Warning: Incompatible color definition on input line 135.
+Package xcolor Warning: Incompatible color definition on input line 157.
 
 
-Package xcolor Warning: Incompatible color definition on input line 143.
+Package xcolor Warning: Incompatible color definition on input line 165.
 
-
-Package xcolor Warning: Incompatible color definition on input line 150.
-
-)
-
-Package xcolor Warning: Incompatible color definition on input line 422.
-
-
-Package xcolor Warning: Incompatible color definition on input line 422.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 422.
-LaTeX Info: Redefining \. on input line 422.
-LaTeX Info: Redefining \% on input line 422.
+LaTeX Info: Redefining \. on input line 166.
+LaTeX Info: Redefining \% on input line 166.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 15
  []
 
 [15]
-LaTeX Info: Redefining \. on input line 422.
-LaTeX Info: Redefining \% on input line 422.
+
+Package xcolor Warning: Incompatible color definition on input line 172.
+
+)
+
+Package xcolor Warning: Incompatible color definition on input line 425.
+
+
+Package xcolor Warning: Incompatible color definition on input line 425.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
+LaTeX Info: Redefining \. on input line 425.
+LaTeX Info: Redefining \% on input line 425.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 16 []
  []
 
 [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 422.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
  (article.aux
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \. on input line 26.
+LaTeX Info: Redefining \% on input line 26.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 422.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 422.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
 Package rerunfilecheck Info: File `article.out' has not changed.
-(rerunfilecheck)             Checksum: BBDE18749A70AE15DAA2027909F8309D;1222.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 422.
+(rerunfilecheck)             Checksum: 4BE3055578BB71E7D1E16A27F936B785;1154.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
  ) 
 Here is how much of TeX's memory you used:
- 13054 strings out of 492945
- 181295 string characters out of 3135513
- 352070 words of memory out of 3000000
- 16612 multiletter control sequences out of 15000+200000
+ 13063 strings out of 492945
+ 181522 string characters out of 3135513
+ 352953 words of memory out of 3000000
+ 16619 multiletter control sequences out of 15000+200000
  82566 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,17n,35p,3220b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Subsection.5.3.Comparaci\363n\040de\040los\040mod
-elos\040y\040conclusiones.2} has been referenced but does not exist, replaced b
-y a fixed one
+pdfTeX warning (dest): name{Section.5.Comparaci\363n\040de\040los\040modelos\
+040y\040conclusiones.1} has been referenced but does not exist, replaced by a f
+ixed one
 
 pdfTeX warning (dest): name{Subsection.5.1.Regresi\363n\040lineal\040Bayesiana\
 040prioris\040dependientes.2} has been referenced but does not exist, replaced 
@@ -1428,9 +1453,9 @@ blic/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtto10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on article.pdf (16 pages, 1271571 bytes).
+Output written on article.pdf (16 pages, 1276934 bytes).
 PDF statistics:
- 354 PDF objects out of 1000 (max. 8388607)
- 71 named destinations out of 1000 (max. 500000)
+ 366 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 

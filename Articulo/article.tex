@@ -52,7 +52,7 @@
 \Plaintitle{Redes neuronales Bayesianas para regresión}
 \Shorttitle{Redes neuronales Bayesianas para regresión}
 
-\Abstract{}
+\Abstract{En este trabajo se da una introducción a las redes neuronales Bayesianas para resolver problemas de regresión, se discute su complejidad y problemas de identificabilidad, es decir, la imposibilidad de obtener un buen ajuste de los parámetros desconocidos. Además, se presentan las redes como un modelo de regresión y se proveen referencias de sus relaciones con otros modelos. Finalmente, se realiza un caso de estudio para mostrar sus problemas de identificabilidad y su alto poder predictivo.}
 
 \Keywords{Redes Neuronales, regresión, modelos lineales, Inferencia Bayesiana}
 \Plainkeywords{Redes Neuronales, regresión, modelos lineales, Inferencia Bayesiana}
@@ -73,12 +73,15 @@
 
 
 \section{Introducción}
+Este trabajo es una breve introducción de las redes neuronales Bayesianas, y se presentan como una generalización del problema de regresión. De igual forma, son equivalentes a una aproximación polinómica y convergen asintóticamente a un proceso gaussiano. Además, se introduce el problema de identificación que las redes poseen debido a la sobre-parametrización y complejidad, presentando también algunas referencias que han podido lidiar con dicha problemática.\\
 
+Como caso de estudio, se analiza los precios de casas, de la data Housing. Se implementa una red neuronal Bayesiana con una capa escondida, con 4 neuronas y prioris independientes, y se compara con una regresión lineal Bayesiana con prioris multivariadas para modelar la dependencia de los parámetros. Pese los altos costos computacionales, la mala interpretación de los modelos, y la no identificabilidad de los parámetros, la red neuronal ofrece mejores predicciones frente a la regresión lineal.\\
+
+El trabajo de divide de la siguiente forma, en la \textit{sección 2} se introducen las redes neuronales, y su representación gráfica. En la \textit{sección 3}, se define una red neuronal como modelo de regresión, se presenta el modelo lineal como caso particular de una red neuronal, y se discute de sus equivalencias con otros modelos. En la \textit{sección 4}, se introducen las redes neuronales Bayesianas y se presenta la ecuación de actualización de Bayes para estos modelos. En la \textit{sección 5}, se realiza un análisis de los datos usando modelos lineales y redes neuronales, se da un breve resumen de la inferencia de los parámetros y convergencia de los mismos. Finalmente, en la \textit{sección 6}, se da una comparación del ajuste y predicciones de ambos modelos.
   
-\newpage
 \section{Redes Neuronales}
 
-Las redes neuronales (NN) son funciones no lineales $NN:\mathbb{R}^n \rightarrow \mathbb{R}^m$, que en principio, pueden modelar cualquier mapeo \textit{suave} de  $\mathbb{R}^n$ a $\mathbb{R}^m$. A las variables predictivas de la red se les conoce como entradas (\textit{inputs}) y a las  dependientes se les conoce como salida (\textit{output}). Una NN puede ser vista como un conjunto neuronas organizadas en capas (\textit{layers}). Las variables predictivas forman la primera capa, las dependientes la  última, y las capas intermedias (\textit{Hidden Layers}) que contienen a las neuronas \cite{Paige2001}. La dinámica de una red neuronal puede ser representada mediante un diagrama, en la \textit{figura 1} se muestra una red neuronal con 5 variables predictivas (\textit{columna Entradas}), 2 capas ocultas con 3 neuronas cada una, y una variable dependiente (\textit{columna salidas}).
+Las redes neuronales (NN) son funciones no lineales $NN:\mathbb{R}^n \rightarrow \mathbb{R}^m$, que en principio, pueden modelar cualquier mapeo \textit{suave} de  $\mathbb{R}^n$ a $\mathbb{R}^m$. A las variables predictivas de la red se les conoce como entradas (\textit{inputs}) y a las  dependientes se les conoce como salida (\textit{output}). Una NN puede ser vista como un conjunto neuronas organizadas en capas (\textit{layers}), las variables predictivas forman la primera capa, las dependientes la  última, y las capas intermedias (\textit{Hidden Layers}) contienen a las neuronas \cite{Paige2001}. La dinámica de una red neuronal puede ser representada mediante un diagrama, en la \textit{figura 1} se muestra una red neuronal con 5 variables predictivas (\textit{columna Entradas}), 2 capas ocultas con 3 neuronas cada una, y una variable dependiente (\textit{columna salidas}).
 
 \begin{figure}[H]
 \centering
@@ -96,7 +99,7 @@ $$
 \label{fig:fig1}
 \end{figure}
 
-La interacción neuronal de las redes se modela con correspondencias no lineales, que se les denota como la función de activación ($\phi$), las más populares son: la función logística (\textit{sigmuid}), y la  tangente hiperbólica (\textit{tanh}), \cite{Bhat2006}. Las Redes Neuronales pese que son simples modelos para simular la dinámica cerebral, son poderosos modelos predictivos que han sido de gran utilidad en el análisis de datos, para tratar problemas de clasificación y regresión. Pese a su alto poder predictivo, las NN sufren de poca interpretación sobre el fenómeno físico,  sobre parametrización (\textit{alta cantidad de parámetros}), no identificabilidad (\textit{múltiples soluciones óptimas locales}), y mala aproximación en la inferencia de los parámetros (poca convergencia de los algoritmos de optimización y posterioris multimodales) dificultando el aprendizaje estadístico y automatizado, \cite{Arya2017}. 
+La interacción neuronal de las redes se modela con correspondencias no lineales, que se les denota como la función de activación ($\phi$), las más populares son: la función logística (\textit{sigmuid}), y la  tangente hiperbólica (\textit{tanh}), \cite{Bhat2006}. Las Redes Neuronales pese que son simples modelos para simular la dinámica cerebral, son poderosos modelos predictivos que han sido de gran utilidad en el análisis de datos, para tratar problemas de clasificación y regresión. Pese a su alto poder predictivo, las NN sufren de poca interpretación sobre el fenómeno físico,  sobre parametrización (\textit{alta cantidad de parámetros}), no identificabilidad (\textit{múltiples soluciones óptimas locales}), y mala aproximación en la inferencia de los parámetros (poca convergencia de los algoritmos de optimización y posterioris multimodales) dificultando el aprendizaje estadístico y automatizado, para un mayor contexto teórico revisar \cite{tensorflow2015} o \cite{haykin2009}. 
 
 \section{Regresión}
 
@@ -157,7 +160,7 @@ A diferencia de las NN, los modelos lineales ofrecen simplicidad de interpretaci
 	Donde$f(Z) = \sum_{k=1}^{h_c} \alpha_{h_c,k} Z_c$ es el funcional asociado al problema de regresión, y  $\epsilon_i \sim N(0,\sigma^2)$ es un ruido blanco Gaussiano centrado en 0.
 \end{Def}
 
-Estimar $f$ en una red neuronal es un problema muy complicado, posee un alto costo computacional, y sufre problemas de identificabilidad, que en parte ocurren, por la no-linealidad y sobreparametrización del modelo, resultando en muchas soluciones equivalentes. Existen muchas alternativas para resolver esta problemática, como implementar los algoritmos en varios puntos iniciales aleatorios para evitar soluciones en mínimos locales, reducir la dimensión de X (\textit{componentes principales}), reparametrización del modelo inicial, \cite{Arya2017}.\\
+Estimar $f$ en una red neuronal es un problema muy complicado, posee un alto costo computacional, y sufre problemas de identificabilidad, que en parte ocurren por la no-linealidad y sobreparametrización del modelo, resultando en muchas soluciones equivalentes. Existen muchas alternativas para resolver parcialmente esta problemática, como implementar los algoritmos en varios puntos iniciales aleatorios para evitar soluciones en mínimos locales, reducir la dimensión de X (\textit{componentes principales}), reparametrización del modelo inicial, \cite{Arya2017}.\\
 
 Existen otras alternativas a las redes neuronales que ofrecen resultados aceptables y con mayor facilidad de interpretación y sin problemas de identificabilidad, como los modelos aditivos generalizados \cite{Rigby2005}, regresión con penalización, splines \cite{Silverman1985}, y procesos gaussianos \cite{gramacy2020surrogates}.  
  
@@ -390,9 +393,9 @@ Dicho algoritmo no fue implementado debido al alto costo computacional.
 \end{figure}
 
 
-\subsection{Comparación de los modelos y conclusiones}
+\section{Comparación de los modelos y conclusiones}
 
-Para comparar ambos modelos se proponen los criterios de la log verosimilitud (log-lik), el ajuste del modelo mediante, los residuos, mean square error (MSE) y su raíz (RMSE), el mean absolute error (MAE), el criterio de watanabe (WAIC) \cite{watanabe}, que es una generalización propia y más eficiente de los criterios AIC y DIC,  y un leave one out cross validation (loo) \cite{loo}.  Se descarta el factor de Bayes \cite{bayesfactor}, debido a que computar la predictiva de la red neuronal es computacionalmente costoso.\\
+Para comparar ambos modelos se proponen los criterios de la log verosimilitud (log-lik), el ajuste del modelo mediante, los residuos, mean square error (MSE) y su raíz (RMSE), el mean absolute error (MAE), el criterio de \cite{watanabe} (WAIC) , que es una generalización propia y más eficiente de los criterios AIC y DIC,  y un leave one out cross validation (loo) \cite{loo}.  Se descarta el factor de Bayes \cite{bayesfactor}, debido a que computar la predictiva de la red neuronal es computacionalmente costoso.\\
 
 \begin{table}[h]
 \centering
