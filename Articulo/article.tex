@@ -30,7 +30,7 @@
 \makeatother
 
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
-\newtheorem{Def}{Definition}
+\newtheorem{Def}{Definición}
 \newtheorem{prop}{Proposition}
 \newtheorem{eje}{Example}
 \newtheorem{teo}{Theorem}
@@ -75,13 +75,13 @@
 \section{Introducción}
 Este trabajo es una breve introducción de las redes neuronales Bayesianas, y se presentan como una generalización del problema de regresión. De igual forma, son equivalentes a una aproximación polinómica y convergen asintóticamente a un proceso gaussiano. Además, se introduce el problema de identificación que las redes poseen debido a la sobre-parametrización y complejidad, presentando también algunas referencias que han podido lidiar con dicha problemática.\\
 
-Como caso de estudio, se analiza los precios de casas, de la data Housing. Se implementa una red neuronal Bayesiana con una capa escondida, con 4 neuronas y prioris independientes, y se compara con una regresión lineal Bayesiana con prioris multivariadas para modelar la dependencia de los parámetros. Pese los altos costos computacionales, la mala interpretación de los modelos, y la no identificabilidad de los parámetros, la red neuronal ofrece mejores predicciones frente a la regresión lineal.\\
+Como caso de estudio, se analiza los precios de casas, de la data Housing. Se implementa una red neuronal Bayesiana con una capa oculta, con 4 neuronas y prioris independientes, y se compara con una regresión lineal Bayesiana con prioris multivariadas para modelar la dependencia de los parámetros. Pese los altos costos computacionales, la mala interpretación de los modelos, y la no identificabilidad de los parámetros, la red neuronal ofrece mejores predicciones frente a la regresión lineal.\\
 
-El trabajo de divide de la siguiente forma, en la \textit{sección 2} se introducen las redes neuronales, y su representación gráfica. En la \textit{sección 3}, se define una red neuronal como modelo de regresión, se presenta el modelo lineal como caso particular de una red neuronal, y se discute de sus equivalencias con otros modelos. En la \textit{sección 4}, se introducen las redes neuronales Bayesianas y se presenta la ecuación de actualización de Bayes para estos modelos. En la \textit{sección 5}, se realiza un análisis de los datos usando modelos lineales y redes neuronales, se da un breve resumen de la inferencia de los parámetros y convergencia de los mismos. Finalmente, en la \textit{sección 6}, se da una comparación del ajuste y predicciones de ambos modelos.
+El trabajo se divide de la siguiente forma, en la \textit{Sección 2} se introducen las redes neuronales, y su representación gráfica. En la \textit{Sección 3}, se define una red neuronal como modelo de regresión, se presenta el modelo lineal como caso particular de una red neuronal, y se discute de sus equivalencias con otros modelos. En la \textit{Sección 4}, se introducen las redes neuronales Bayesianas y se presenta la ecuación de actualización de Bayes para estos modelos. En la \textit{Sección 5}, se realiza un análisis de los datos usando modelos lineales y redes neuronales, se da un breve resumen de la inferencia de los parámetros y convergencia de los mismos. Finalmente, en la \textit{Sección 6}, se da una comparación del ajuste y predicciones de ambos modelos.
   
 \section{Redes Neuronales}
 
-Las redes neuronales (NN) son funciones no lineales $NN:\mathbb{R}^n \rightarrow \mathbb{R}^m$, que en principio, pueden modelar cualquier mapeo \textit{suave} de  $\mathbb{R}^n$ a $\mathbb{R}^m$. A las variables predictivas de la red se les conoce como entradas (\textit{inputs}) y a las  dependientes se les conoce como salida (\textit{output}). Una NN puede ser vista como un conjunto neuronas organizadas en capas (\textit{layers}), las variables predictivas forman la primera capa, las dependientes la  última, y las capas intermedias (\textit{Hidden Layers}) contienen a las neuronas \cite{Paige2001}. La dinámica de una red neuronal puede ser representada mediante un diagrama, en la \textit{figura 1} se muestra una red neuronal con 5 variables predictivas (\textit{columna Entradas}), 2 capas ocultas con 3 neuronas cada una, y una variable dependiente (\textit{columna salidas}).
+Las redes neuronales (NN) son funciones no lineales $NN:\mathbb{R}^n \rightarrow \mathbb{R}^m$, que en principio, pueden modelar cualquier mapeo \textit{suave} de  $\mathbb{R}^n$ a $\mathbb{R}^m$. A las variables predictivas de la red se les conoce como entradas (\textit{inputs}) y a las  dependientes se les conoce como salida (\textit{output}). Una NN puede ser vista como un conjunto neuronas organizadas en capas (\textit{layers}), las variables predictivas forman la primera capa, las dependientes la  última, y las capas intermedias (\textit{Hidden Layers}) contienen a las neuronas \cite{Paige2001}. La dinámica de una red neuronal puede ser representada mediante un diagrama, en la \textit{Figura 1} se muestra una red neuronal con 5 variables predictivas (\textit{columna Entradas}), 2 capas ocultas con 3 neuronas cada una, y una variable dependiente (\textit{columna salidas}).
 
 \begin{figure}[H]
 \centering
@@ -107,11 +107,11 @@ Este trabajo se enfoca en el problema de regresión, este consiste en estimar la
 
 \begin{Def}
 	Sea $Y = \{Y_1,Y_2,\ldots,Y_n\}$ un conjunto en $\mathbb{R}$ que representa una muestra aleatoria de la variable dependiente Y, y sea $X = \{X_1,X_2,\ldots,X_n\}$ un conjunto en $\mathbb{R}^d$ que representa una muestra aleatoria de variables explicativas X. Entonces, el problema de regresión consiste en estimar el funcional $f:\mathbb{R}^d \rightarrow \mathbb{R}$ tal que:
-	$$Y_i = f(X_i) +\epsilon_i$$
-	Donde $\epsilon_i \sim N(0,\sigma^2)$ representa un ruido blanco Gaussiano centrado en 0.
+	$$Y_i = f(X_i) +\epsilon_i;$$
+	donde $\epsilon_i \sim N(0,\sigma^2)$ representa un ruido blanco Gaussiano centrado en 0.
 \end{Def}
 
-Los modelos más utilizados para  el problema de regresión son los modelos lineales, que consisten en asumir que el funcional $f$ es lineal ($f(X) = aX +b$). Estos modelos poseen supuestos muy fuertes (\textit{no colinealidad y homogeneidad)} y generalmente ofrecen pobres predicciones. Los modelos lineales son un caso particular de las redes neuronales (\textit{NN sin capas ocultas}), en la \textit{figura 2} se presenta el diagrama de un modelo lineal visto como una red neuronal.
+Los modelos más utilizados para  el problema de regresión son los modelos lineales, que consisten en asumir que el funcional $f$ es lineal ($f(X) = aX +b$). Estos modelos poseen supuestos muy fuertes (\textit{no colinealidad y homogeneidad)} y generalmente ofrecen pobres predicciones. Los modelos lineales son un caso particular de las redes neuronales (\textit{NN sin capas ocultas}), en la \textit{Figura 2} se presenta el diagrama de un modelo lineal visto como una red neuronal.
 
 
 \begin{figure}[H]
@@ -132,8 +132,8 @@ Los modelos más utilizados para  el problema de regresión son los modelos line
  
 \begin{Def}
 	Sea $Y = \{Y_1,Y_2,\ldots,Y_n\}$ una muestra aleatoria en $\mathbb{R}$ para la variable dependiente Y, y sea $X = \{X_1,X_2,\ldots,X_n\}$ una muestra aleatoria en $\mathbb{R}^d$ de las variables explicativas X. Se dicen que X e Y siguen un modelo lineal si existe un vector de parámetros $\theta = (\beta_0,\beta_1, \ldots,\beta_d) \in\Theta = \mathbb{R}^{d+1}$ tal que se satisface la siguiente ecuación.
-	$$Y_i = \beta_0 + \sum_{i=1}^d \beta_i X_i +\epsilon_i$$
-	Donde $f(X) = \sum_{i=1}^d\beta_iX_i$ es el funcional asociado al problema de regresión y $\epsilon_i \sim N(0,\sigma^2)$ es un ruido blanco Gaussiano centrado en 0.
+	$$Y_i = \beta_0 + \sum_{i=1}^d \beta_i X_i +\epsilon_i;$$
+	donde $f(X) = \sum_{i=1}^d\beta_iX_i$ es el funcional asociado al problema de regresión y $\epsilon_i \sim N(0,\sigma^2)$ es un ruido blanco Gaussiano centrado en 0.
 \end{Def}
  
  
@@ -151,13 +151,13 @@ A diferencia de las NN, los modelos lineales ofrecen simplicidad de interpretaci
 	\end{itemize}
 	 
 	Se dicen que X e Y siguen un modelo de redes neuronales multicapas, si existe una colección de parámetros $\theta = \left\{ \{\beta_i\}_{i=0}^{c},\{\alpha_{0,i}\}_{i=0}^{d},\{\alpha_{1,i}\}_{i=0}^{h_1},\ldots, \{\alpha_{c,i}\}_{i=0}^{h_c}, \right\} \in \Theta$ tal que se satisface la siguiente ecuación recursiva.
-	$$Y_i = \beta_{0} + \sum_{k=1}^{h_c} \alpha_{h_c,k} Z_c +\epsilon_i, \text{ } i = 1,2,\ldots,n$$
-	Donde: 
+	$$Y_i = \beta_{0} + \sum_{k=1}^{h_c} \alpha_{h_c,k} Z_c +\epsilon_i, \text{ } i = 1,2,\ldots,n;$$
+	donde: 
 	$$Z_{j} = \phi\left(\beta_j +\sum_{k=1}^{h_j}\alpha_{j-1,k}Z_{k,j-1}\right)\text{ } j = 1,2,\ldots,c$$
 	y 
-	$$Z_{1} = \phi\left(\beta_1 +\sum_{k=1}^{d}\alpha_{0,k}X_{k}\right) $$
+	$$Z_{1} = \phi\left(\beta_1 +\sum_{k=1}^{d}\alpha_{0,k}X_{k}\right);$$
 	
-	Donde$f(Z) = \sum_{k=1}^{h_c} \alpha_{h_c,k} Z_c$ es el funcional asociado al problema de regresión, y  $\epsilon_i \sim N(0,\sigma^2)$ es un ruido blanco Gaussiano centrado en 0.
+	donde$f(Z) = \sum_{k=1}^{h_c} \alpha_{h_c,k} Z_c$ es el funcional asociado al problema de regresión, y  $\epsilon_i \sim N(0,\sigma^2)$ es un ruido blanco Gaussiano centrado en 0.
 \end{Def}
 
 Estimar $f$ en una red neuronal es un problema muy complicado, posee un alto costo computacional, y sufre problemas de identificabilidad, que en parte ocurren por la no-linealidad y sobreparametrización del modelo, resultando en muchas soluciones equivalentes. Existen muchas alternativas para resolver parcialmente esta problemática, como implementar los algoritmos en varios puntos iniciales aleatorios para evitar soluciones en mínimos locales, reducir la dimensión de X (\textit{componentes principales}), reparametrización del modelo inicial, \cite{Arya2017}.\\
@@ -166,12 +166,12 @@ Existen otras alternativas a las redes neuronales que ofrecen resultados aceptab
  
 \section{Redes neuronales Bayesianas} 
  
- Una red neuronal Bayesiana es un modelo NN donde se asume que los parámetros desconocidos $$\theta = \left\{ \{\beta_i\}_{i=0}^{c},\{\alpha_{0,i}\}_{i=0}^{d},\{\alpha_{1,i}\}_{i=0}^{h_1},\ldots, \{\alpha_{c,i}\}_{i=0}^{h_c}, \right\} \in \Theta$$ 
-Son variables aleatorias, de los cuales se conoce su información a priori, resumida en una función de probabilidad $P(\theta)$ \cite{Bhat2006}. Por lo tanto, se desea conocer la función de probabilidad de $\theta$ dado los valores de la muestra $P(\theta/Y)$ mediante el teorema de actualización de Bayes. \cite{Miggon} y \cite{degroot19886}\\
+ Una red neuronal Bayesiana es un modelo NN, que se asume que los parámetros desconocidos $$\theta = \left\{ \{\beta_i\}_{i=0}^{c},\{\alpha_{0,i}\}_{i=0}^{d},\{\alpha_{1,i}\}_{i=0}^{h_1},\ldots, \{\alpha_{c,i}\}_{i=0}^{h_c}, \right\} \in \Theta;$$ 
+son variables aleatorias, de los cuales se conoce su información a priori, resumida en una función de probabilidad $P(\theta)$ \cite{Bhat2006}. Por lo tanto, se desea conocer la función de probabilidad de $\theta$ dado los valores de la muestra $P(\theta/Y)$ mediante el teorema de actualización de Bayes, \cite{Miggon} y \cite{degroot19886}.\\
 
 Usando la \textit{definición 3}, la muestra para la variable de salida Y puede ser reescrita de la forma:
-$$Y \sim N(f(Z/\theta),\sigma^2)$$
-Donde $f(Z/ \theta)$ es el funcional asociado al modelos NN condicionado al conjunto de parámetros. Por lo tanto, la función de verosimilitud es simplemente el producto de las marginales
+$$Y \sim N(f(Z/\theta),\sigma^2);$$
+donde $f(Z/ \theta)$ es el funcional asociado al modelos NN condicionado al conjunto de parámetros. Por lo tanto, la función de verosimilitud es simplemente el producto de las marginales
 $$P(Y/\theta) = \prod_{i=1}^n\dfrac{1}{\sqrt{2\pi\sigma^2}}exp \left\{ - \dfrac{(Y_i- f(Z_i/\theta) )^2}{2\sigma^2} \right\}$$
 Las distribuciones a priori de cada uno de los parámetros se asumen independientes entre si, por lo tanto, P se escribe de la forma:
  $$P(\theta) = P(\sigma^2)\prod_{k=1}^cP(\beta_k)\prod_{k=1}^d P(\alpha_{0,k})\prod_{k=1}^{h_1} P(\alpha_{1,k})\cdots \prod_{k=1}^{h_c} P(\alpha_{c,k})$$
@@ -182,9 +182,9 @@ $$P(\theta/Y) \propto  exp \left\{ - \sum_{i=1}^n\dfrac{(Y_i- f(Z_i/\theta) )^2}
 Una vez encontrada la posteriori se pueden realizar predicciones mediante la distribución  predictiva que se puede computar a partir de la posteriori de la siguiente forma:
 $$P(Y_h/Y) = \int_{\Theta}P(Y_h/\theta)P(\theta/Y)d\theta.$$
 
-Resultados teóricos importantes \cite{Cheng2018} muestran que cada capa oculta de una red neuronal se puede aproximar mediante una regresión polinómica, y \cite{Williams1996} muestra que una red neuronal con grandes cantidades de neuronas converge en distribución a un proceso Gaussiano, que su computo es mucho más fácil de realizar, ofreciendo predicciones aceptables.
+Resultados teóricos importantes \cite{Cheng2018} muestran que cada capa oculta de una red neuronal se puede aproximar mediante una regresión polinómica, y \cite{Williams1996} muestra que una red neuronal con grandes cantidades de neuronas converge en distribución a un proceso Gaussiano, que su cómputo es mucho más fácil de realizar, ofreciendo predicciones aceptables.
   
-\section{caso de estudio: Estimacion del precio de las casas}  
+\section{Caso de estudio: Estimaci\'on del precio de las casas}  
 
 Se desea estimar el precio de las casas en unidades monetarias, utilizando una red neuronal Bayesiana. Los datos a utilizar están almacenados en la base de datos \textit{Housing}, que contiene los registros de precios en unidades monetarias de 506 casas, con 14 variables que almacenan la siguiente información:
 
@@ -200,12 +200,12 @@ Se desea estimar el precio de las casas en unidades monetarias, utilizando una r
 	\item \textit{autovias}: Accesibilidad a autovías. 
 	\item \textit{tasa.imp}: Tasa de impuestos inmobiliarios.
 	\item \textit{prop.alumn.prof}: Proporción de alumnos por profesor.
-	\item \textit{pob.raza.color}: Población de raza negra
+	\item \textit{pob.raza.color}: Población de raza de color.
 	\item \textit{nivel.econ}: Nivel económico más bajo de la población
 	\item \textit{precio}: Precio de la casa en unidades monetarias
 \end{itemize}
 
-Cabe resaltar que la variable a estimar es \textit{precio} y el resto de las variables son predictivas.La variable precio no cumple los supuestos de normalidad (\textit{ver figura 3,  [7,7]}) en promedio el precio de las casas es de 2.5 unidades monetarias, dicho valor esta relativamente cerca de la mediana, indicando simetría en la variable, el precio mínimo es de 5 unidades monetarias, y el valor máximo es de 50 unidades. La variable río no será considerada en el modelo, ya que el 93\% (\textit{475 de 506}) de los registros no están ubicadas cercas de algún río, por lo tanto, no aporta información significativa.
+Cabe resaltar que la variable a estimar es \textit{precio} y el resto de las variables son predictivas.La variable precio no cumple los supuestos de normalidad (\textit{ver Figura 3,  [7,7]}) en promedio el precio de las casas es de 2.5 unidades monetarias, dicho valor esta relativamente cerca de la mediana, indicando simetría en la variable, el precio mínimo es de 5 unidades monetarias, y el valor máximo es de 50 unidades. La variable río no será considerada en el modelo, ya que el 93\% (\textit{475 de 506}) de los registros no están ubicadas cercas de algún río, por lo tanto, no aporta información significativa.
  
 \begin{CodeChunk}
 \begin{CodeInput}
@@ -218,7 +218,7 @@ Cabe resaltar que la variable a estimar es \textit{precio} y el resto de las var
 \end{CodeOutput}
 \end{CodeChunk}
 
-En \textit{figura 3} se muestra, densidades correlaciones y gráficos de dispersión para las primeras 6 variables explicativas (\textit{descartando río ya que no es numérica}) y la variable precio, podemos observar que el número de habitaciones, es la más correlacionada con respecto al precio (\textit{figura 3 [7,5]}). Las variables tasa de criminalidad y proporción de suelo residual, parecen seguir un comportamiento exponencial (\textit{ver figura 3 [1,1] y [2,2]} ). La variable proporción de suelo industrial posee un comportamiento multimodal, esto puede ser perjudicial para los modelos utilizados, por lo tanto, si su aporte lineal no es considerable, será descartada del modelo.  
+En \textit{Figura 3} se muestra, densidades correlaciones y gráficos de dispersión para las primeras 6 variables explicativas (\textit{descartando río ya que no es numérica}) y la variable precio, podemos observar que el número de habitaciones, es la más correlacionada con respecto al precio (\textit{Figura 3 [7,5]}). Las variables tasa de criminalidad y proporción de suelo residual, parecen seguir un comportamiento exponencial (\textit{ver Figura 3 [1,1] y [2,2]} ). La variable proporción de suelo industrial posee un comportamiento multimodal, esto puede ser perjudicial para los modelos utilizados, por lo tanto, si su aporte lineal no es considerable, será descartada del modelo.  
   
 \begin{figure}[H]
 	\centering
@@ -227,7 +227,7 @@ En \textit{figura 3} se muestra, densidades correlaciones y gráficos de dispers
 	\label{fig:fig3}
 \end{figure}  
 
-En el segundo conjunto de variables, resaltan la distribución de la zona de trabajo, que al contrario de lo esperado, tienen una correlación muy baja con respecto al precio, indicando poca relación lineal entre las variables. Otra variable con un comportamiento extraño, es la población de color, con un comportamiento exponencial creciente. Las variables autovías y tasa de impuesto inmobiliario están altamente correlacionadas (\textit{figura 4 [2,3]} ),por lo tanto, es importante eliminar una de las variables al estudio, debido a la colinealidad y no invertibilidad en los modelos propuestos. \\  
+En el segundo conjunto de variables, resaltan la distribución de la zona de trabajo, que al contrario de lo esperado, tienen una correlación muy baja con respecto al precio, indicando poca relación lineal entre las variables. Otra variable con un comportamiento extraño, es la población de color, con un comportamiento exponencial creciente. Las variables autovías y tasa de impuesto inmobiliario están altamente correlacionadas (\textit{Figura 4 [2,3]} ),por lo tanto, es importante eliminar una de las variables al estudio, debido a la colinealidad y no invertibilidad en los modelos propuestos. \\  
 
 Para este estudio, se proponen 3 modelos, el primero es una regresión lineal con prioris independientes, este primer modelo sirve para identificar las variables que no afectan directamente al precio, después de eliminar las variables colineales y variables que no afectan al modelo se proponen 2 modelos:
 \begin{itemize}
@@ -246,14 +246,14 @@ Las posterioris se estimaron usando un Monte Carlo Hamiltoniano \cite{DUANE19872
 
 \subsection{Modelo inicial: Regresion lineal Bayesiana} 
  
-Este modelo es una simple regresión lineal donde cada variable explicativa afecta solamente la variable precio, se asume que la variable respuesta se distribuye normal con media y varianza desconocida, por lo tanto, el modelo es de la siguiente forma:
+Este modelo es una simple regresión lineal, que cada variable explicativa afecta solamente la variable precio, se asume que la variable respuesta se distribuye normal con media y varianza desconocida, por lo tanto, el modelo es de la siguiente forma:
 
 $$precio \sim normal(location = \alpha + \sum_{i=1}^{13}\beta_i X_i,scale =  \sigma^2)$$
 $$\sigma \sim half\_student(location = 0,df = 4,scale = 5)$$ 
 $$\alpha \sim student(location = 0,df = 4,scale = 5)$$ 
-$$\beta_i \sim normal(location = 0,scale = 5)$$
+$$\beta_i \sim normal(location = 0,scale = 5);$$
 
-Donde $\alpha$, $\sigma$ y las $\beta_i$ son variables desconocidas, las $X_i$ representan las 13 variables explicativas, de los datos Housing. Dado que no existe información adicional al modelo, las prioris elegidas son poco informativas que se adaptan a la geometría del espacio parametral. Al correr el modelo se obtienen los siguientes resultados:
+donde $\alpha$, $\sigma$ y las $\beta_i$ son variables desconocidas, las $X_i$ representan las 13 variables explicativas, de los datos Housing. Dado que no existe información adicional al modelo, las prioris elegidas son poco informativas que se adaptan a la geometría del espacio parametral. Al correr el modelo se obtienen los siguientes resultados:
 
 \begin{CodeChunk}	
 \begin{CodeOutput}
@@ -286,7 +286,7 @@ Al revisar los intervalos de credibilidad, se observan variables que no aportan 
 	\label{fig:fig5}
 \end{figure}
 
-Se procede a realizar un diagnostico de los parámetros ajustados, el potencial de convergencia $\widehat{R}$ es cercano a 1, indicando que las cadenas convergen,  el menor tamaño de muestra efectivo (\textit{n\_eff}) es mayor a 1,809 observaciones, eso indica que las 4 muestras simuladas de cada parámetro representan al menos 1,800 observaciones de ensayos independientes, en la \textit{figura 5}, las 4 cadenas simuladas en cada uno de los parámetros convergen al mismo punto y son estacionarias indicando que no existen problemas de convergencia. Finalmente, los density plots de las distribuciones posterioris son unimodales, por lo tanto, la media a posteriori es un estimador óptimo en cada uno de los parámetros.\\
+Se procede a realizar un diagnóstico de los parámetros ajustados, el potencial de convergencia $\widehat{R}$ es cercano a 1, indicando que las cadenas convergen,  el menor tamaño de muestra efectivo (\textit{n\_eff}) es mayor a 1,809 observaciones, eso indica que las 4 muestras simuladas de cada parámetro representan al menos 1,800 observaciones de ensayos independientes, en la \textit{Figura 5}, las 4 cadenas simuladas en cada uno de los parámetros convergen al mismo punto y son estacionarias indicando que no existen problemas de convergencia. Finalmente, los gráficos de densidad de las distribuciones posterioris son unimodales, por lo tanto, la media a posteriori es un estimador óptimo en cada uno de los parámetros.\\
 
 Con este modelo se han eliminado 6 variables que no contribuyen al precio de venta de las casas, en las siguientes secciones se presenta una comparación entre una red neuronal Bayesiana y un regresión lineal con prioris dependientes.\\
 
@@ -299,7 +299,7 @@ Con este modelo se han eliminado 6 variables que no contribuyen al precio de ven
 
 \subsection{Regresi\'on lineal Bayesiana prioris dependientes}
 
-Los datos en la \textit{figura 6} muestran que las variables explicativas son no correlacionadas entre si. Por ejemplo, el porcentaje de oxido nítrico y la distribución de la zona de trabajo parecen tener una relación polinómica. Por lo tanto, el supuesto de independencia entre los parámetros es una suposición muy restrictiva, para evitar dichas restricciones se propone el siguiente modelo:
+Los datos en la \textit{Figura 6} muestran que las variables explicativas son no correlacionadas entre sí. Por ejemplo, el porcentaje de óxido nítrico y la distribución de la zona de trabajo parecen tener una relación polinómica. Por lo tanto, el supuesto de independencia entre los parámetros es una suposición muy restrictiva, para evitar dichas restricciones se propone el siguiente modelo:
 $$ precio \sim normal(location = \beta_0+ \sum_{i=1}^{8}\beta_i X_i,scale =  \sigma^2)$$
 $$Intercept \sim student(location = 0,df = 4,scale =1)$$
 $$sigma \sim half\_cuachy(location = 0,scale =5)$$
@@ -307,13 +307,13 @@ $$\beta = (\beta_1,...,\beta_{8})$$
 La distribución a priori propuesta para $\beta$ es una normal multivariada,
 $$\beta \sim Normal_8(location = 0,scale = \Sigma)$$
 Ahora bien, la matriz de covarianza $\Sigma \in \mathbb{R}^{8}$ se asume no diagonal, y se factoriza de la siguiente forma:
-$$\Sigma = D^t\Omega D$$
-Donde  $D = diag(\lambda_1,\lambda_2,...,\lambda_{8})$ es una matriz diagonal de desviaciones estándar y $\Omega$ es la matriz de correlaciones. Las distribuciones a  priori elegidas para D y $\Omega$ son:
+$$\Sigma = D^t\Omega D;$$
+donde  $D = diag(\lambda_1,\lambda_2,...,\lambda_{8})$ es una matriz diagonal de desviaciones estándar y $\Omega$ es la matriz de correlaciones. Las distribuciones a  priori elegidas para D y $\Omega$ son:
 
 $$\lambda_i \sim cauchy(location = 0,scale = 4)$$ 
-$$\Omega \sim LKJ(df = 2)$$
+$$\Omega \sim LKJ(df = 2);$$
 
-Donde LKJ es una distribución matricial propuesta por \cite{LKJ2009}. Esta generaliza la distribución beta, y su forma es una variedad concava en el hiper-cubo $[0,1]^8$.
+donde LKJ es una distribución matricial propuesta por \cite{LKJ2009}. Esta generaliza la distribución beta, y su forma es una variedad cóncava en el hiper-cubo $[0,1]^8$.
 
 
 \begin{figure}[H]
@@ -323,7 +323,7 @@ Donde LKJ es una distribución matricial propuesta por \cite{LKJ2009}. Esta gene
 	\label{fig:fig7}
 \end{figure}
 
-Todos los parámetros de esto modelo convergen, con tamaños de muestra efectivos aceptables (no muy bajos), las distribuciones a posteriori no son multimodales, por lo tanto, el modelo es identificable, este modelo, tubo un alto costo computacional, en comparación al modelo inicial con prioris independientes. 
+Todos los parámetros de este modelo convergen, con tamaños de muestra efectivos aceptables (no muy bajos), las distribuciones a posteriori no son multimodales, por lo tanto, el modelo es identificable, este modelo, tuvo un alto costo computacional, en comparación al modelo inicial con prioris independientes. 
 
 \begin{CodeChunk}	
 \begin{CodeOutput}
@@ -347,9 +347,9 @@ log-posterior     -1567.9 5.219 -1579.2 -1567.6 -1559.0 1668.808  1.0017
 
 Este modelo acepta una representación para $f$ de forma no recursiva mediante la siguiente ecuación:
 
-$$f(X) = \beta_0 + \sum_{k=1}^h v_k tanh\left(a_k + \sum_{j=1}^d \beta_{kj}X_j \right)$$
+$$f(X) = \beta_0 + \sum_{k=1}^h v_k tanh\left(a_k + \sum_{j=1}^d \beta_{kj}X_j \right);$$
 
-Donde $h=4$ son el número de neuronas en la primera capa, y $d = 8$ son el número de variables predictivas utilizadas, se asume independencia entre las distribuciones a priori de los parámetros. Por lo tanto, el modelo es:
+donde $h=4$ son el número de neuronas en la primera capa, y $d = 8$ son el número de variables predictivas utilizadas, se asume independencia entre las distribuciones a priori de los parámetros. Por lo tanto, el modelo es:
 
 $$Y_i \sim normal(location = f(X_i),scale = sigma^2)$$
 $$sigma \sim half\_cuachy(location = 0,scale = 1)$$
@@ -357,7 +357,7 @@ $$\beta_0 \sim student(location = 0,df= 4,scale = 1)$$
 $$a_j \sim student(location = 0,df=4,scale = 1)$$
 $$\beta_{jk} \sim normal(location = 0,scale = 1)$$
 
-Para $i = 1,2,\ldots,n$, $k = 1,2,3,4$ y $j = 1,2,\ldots,8$. Debido a la alta cantidad de parámetros, solo se presentan las importancias de la primera capa ($v_k$), la escala del modelo ($\sigma$). A diferencia de los modelos anteriores, las cadenas convergen en diferentes puntos que representan los óptimos locales de la red, en la \textit{figura 8} se observa que las distribuciones a posteriori son multimodales, por lo tanto, el modelo es no identificable, y la inferencia de los parámetros no brindan buenas aproximaciones. 
+Para $i = 1,2,\ldots,n$, $k = 1,2,3,4$ y $j = 1,2,\ldots,8$. Debido a la alta cantidad de parámetros, solo se presentan las importancias de la primera capa ($v_k$), la escala del modelo ($\sigma$). A diferencia de los modelos anteriores, las cadenas convergen en diferentes puntos que representan los óptimos locales de la red, en la \textit{Figura 8} se observa que las distribuciones a posteriori son multimodales, por lo tanto, el modelo es no identificable, y la inferencia de los parámetros no brindan buenas aproximaciones. 
 
 \begin{CodeChunk}	
 \begin{CodeOutput}
@@ -395,7 +395,7 @@ Dicho algoritmo no fue implementado debido al alto costo computacional.
 
 \section{Comparación de los modelos y conclusiones}
 
-Para comparar ambos modelos se proponen los criterios de la log verosimilitud (log-lik), el ajuste del modelo mediante, los residuos, mean square error (MSE) y su raíz (RMSE), el mean absolute error (MAE), el criterio de \cite{watanabe} (WAIC) , que es una generalización propia y más eficiente de los criterios AIC y DIC,  y un leave one out cross validation (loo) \cite{loo}.  Se descarta el factor de Bayes \cite{bayesfactor}, debido a que computar la predictiva de la red neuronal es computacionalmente costoso.\\
+Para comparar ambos modelos se proponen los criterios de la log verosimilitud (log-lik), el ajuste del modelo mediante, los residuos, error cuadrático medio (MSE) y su raíz (RMSE), el error absoluto medio (MAE), el criterio de \cite{watanabe} (WAIC) , que es una generalización propia y más eficiente de los criterios AIC y DIC,  y un leave one out cross validation (loo) \cite{loo}.  Se descarta el factor de Bayes \cite{bayesfactor}, debido a que computar la predictiva de la red neuronal es computacionalmente costoso.\\
 
 \begin{table}[h]
 \centering

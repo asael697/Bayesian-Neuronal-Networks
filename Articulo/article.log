@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.19)  23 APR 2020 21:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.3.19)  24 APR 2020 12:42
 entering extended mode
 **./article.tex
 (article.tex
@@ -1036,7 +1036,7 @@ Overfull \hbox (5.47499pt too wide) has occurred while \output is active
  []
 
 [6]
-<images/pairs1-1.png, id=145, 722.7pt x 578.16pt>
+<images/pairs1-1.png, id=146, 722.7pt x 578.16pt>
 File: images/pairs1-1.png Graphic file (type png)
 <use images/pairs1-1.png>
 Package pdftex.def Info: images/pairs1-1.png  used on input line 225.
@@ -1084,7 +1084,7 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.239 
        <./images/pairs1-1.png>]
-<images/pairs2-1.png, id=161, 722.7pt x 578.16pt>
+<images/pairs2-1.png, id=162, 722.7pt x 578.16pt>
 File: images/pairs2-1.png Graphic file (type png)
 <use images/pairs2-1.png>
 Package pdftex.def Info: images/pairs2-1.png  used on input line 242.
@@ -1104,7 +1104,7 @@ has been already used, duplicate ignored
 l.262 ... 26.255  36.955  47.264  4117.100  0.9993
                                                    <./images/pairs2-1.png (PNG 
 copy)>]
-<images/traceplot1.png, id=172, 722.7pt x 578.16pt>
+<images/traceplot1.png, id=173, 722.7pt x 578.16pt>
 File: images/traceplot1.png Graphic file (type png)
 <use images/traceplot1.png>
 Package pdftex.def Info: images/traceplot1.png  used on input line 284.
@@ -1135,13 +1135,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 291--292
 
  []
 
-<images/pairs3-1.png, id=179, 722.7pt x 578.16pt>
+<images/pairs3-1.png, id=180, 722.7pt x 578.16pt>
 File: images/pairs3-1.png Graphic file (type png)
 <use images/pairs3-1.png>
 Package pdftex.def Info: images/pairs3-1.png  used on input line 295.
 (pdftex.def)             Requested size: 722.69823pt x 578.15858pt.
-LaTeX Info: Redefining \. on input line 304.
-LaTeX Info: Redefining \% on input line 304.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 303.
+LaTeX Info: Redefining \% on input line 303.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 10 []
@@ -1152,7 +1155,7 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.304 ...m student(location = 0,df = 4,scale =1)$$
+l.303 ...{i=1}^{8}\beta_i X_i,scale =  \sigma^2)$$
                                                    <./images/pairs3-1.png (PNG 
 copy)>]
 
@@ -1161,13 +1164,13 @@ Package xcolor Warning: Incompatible color definition on input line 316.
 
 Package xcolor Warning: Incompatible color definition on input line 316.
 
-<images/traceplot2.png, id=189, 677.53125pt x 451.6875pt>
+<images/traceplot2.png, id=190, 677.53125pt x 451.6875pt>
 File: images/traceplot2.png Graphic file (type png)
 <use images/traceplot2.png>
 Package pdftex.def Info: images/traceplot2.png  used on input line 321.
 (pdftex.def)             Requested size: 542.02573pt x 361.35048pt.
-LaTeX Info: Redefining \. on input line 334.
-LaTeX Info: Redefining \% on input line 334.
+LaTeX Info: Redefining \. on input line 329.
+LaTeX Info: Redefining \% on input line 329.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 11
@@ -1178,10 +1181,10 @@ Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.334 ... -22.196 -14.553 -6.4797 2324.414  1.0005
-                                                   <./images/traceplot2.png>]
-LaTeX Info: Redefining \. on input line 373.
-LaTeX Info: Redefining \% on input line 373.
+l.329 \begin{CodeOutput}
+                         <./images/traceplot2.png>]
+LaTeX Info: Redefining \. on input line 368.
+LaTeX Info: Redefining \% on input line 368.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 12 []
@@ -1194,7 +1197,7 @@ Package xcolor Warning: Incompatible color definition on input line 377.
 
 Package xcolor Warning: Incompatible color definition on input line 377.
 
-<images/traceplot3.png, id=204, 677.53125pt x 526.96875pt>
+<images/traceplot3.png, id=205, 677.53125pt x 526.96875pt>
 File: images/traceplot3.png Graphic file (type png)
 <use images/traceplot3.png>
 Package pdftex.def Info: images/traceplot3.png  used on input line 390.
@@ -1273,14 +1276,8 @@ Package xcolor Warning: Incompatible color definition on input line 46.
 
 Package xcolor Warning: Incompatible color definition on input line 46.
 
-
-Package xcolor Warning: Incompatible color definition on input line 57.
-
-
-Package xcolor Warning: Incompatible color definition on input line 59.
-
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 \T1/lmr/m/n/10.95 14 []
@@ -1291,8 +1288,14 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.60 
+l.47 
      ]
+
+Package xcolor Warning: Incompatible color definition on input line 57.
+
+
+Package xcolor Warning: Incompatible color definition on input line 59.
+
 
 Package xcolor Warning: Incompatible color definition on input line 66.
 
@@ -1367,20 +1370,20 @@ Package xcolor Warning: Incompatible color definition on input line 145.
 
 Package xcolor Warning: Incompatible color definition on input line 151.
 
-
-Package xcolor Warning: Incompatible color definition on input line 157.
-
-
-Package xcolor Warning: Incompatible color definition on input line 165.
-
-LaTeX Info: Redefining \. on input line 166.
-LaTeX Info: Redefining \% on input line 166.
+LaTeX Info: Redefining \. on input line 152.
+LaTeX Info: Redefining \% on input line 152.
 
 Overfull \hbox (10.94998pt too wide) has occurred while \output is active
 [] \T1/lmr/m/n/10.95 15
  []
 
 [15]
+
+Package xcolor Warning: Incompatible color definition on input line 157.
+
+
+Package xcolor Warning: Incompatible color definition on input line 165.
+
 
 Package xcolor Warning: Incompatible color definition on input line 172.
 
@@ -1407,14 +1410,21 @@ LaTeX Info: Redefining \% on input line 26.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
-Package rerunfilecheck Info: File `article.out' has not changed.
-(rerunfilecheck)             Checksum: 4BE3055578BB71E7D1E16A27F936B785;1154.
+
+
+Package rerunfilecheck Warning: File `article.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `article.out':
+(rerunfilecheck)             Before: 4BE3055578BB71E7D1E16A27F936B785;1154
+(rerunfilecheck)             After:  4A88D6BDB26EE59D3484990922DF7BF7;1159.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 425.
  ) 
 Here is how much of TeX's memory you used:
- 13063 strings out of 492945
- 181522 string characters out of 3135513
- 352953 words of memory out of 3000000
+ 13064 strings out of 492945
+ 181612 string characters out of 3135513
+ 352954 words of memory out of 3000000
  16619 multiletter control sequences out of 15000+200000
  82566 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1426,6 +1436,10 @@ ixed one
 pdfTeX warning (dest): name{Subsection.5.1.Regresi\363n\040lineal\040Bayesiana\
 040prioris\040dependientes.2} has been referenced but does not exist, replaced 
 by a fixed one
+
+pdfTeX warning (dest): name{Section.4.caso\040de\040estudio:\040Estimacion\040d
+el\040precio\040de\040las\040casas.1} has been referenced but does not exist, r
+eplaced by a fixed one
 
 pdfTeX warning (dest): name{Section.2.Regresi\363n.1} has been referenced but d
 oes not exist, replaced by a fixed one
@@ -1453,9 +1467,9 @@ blic/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtto10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/xypic/xyatip10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/xypic/xybtip10.pfb>
-Output written on article.pdf (16 pages, 1276934 bytes).
+Output written on article.pdf (16 pages, 1278054 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
+ 367 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
  103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
